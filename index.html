@@ -75,13 +75,92 @@
   <!-- cierre de main -->
   </main>
 
+  ```html
+<form action="#" method="post">
+
+    <h2>Contacto</h2>
+
+    <!-- Nombre -->
+    <label for="nombre">Nombre:</label>
+    <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        placeholder="Escribe tu nombre"
+        required
+        minlength="3"
+        maxlength="50"
+    >
+
+    <!-- Correo -->
+    <label for="correo">Correo electrónico:</label>
+    <input
+        type="email"
+        id="correo"
+        name="correo"
+        placeholder="ejemplo@correo.com"
+        required
+    >
+
+    <!-- Teléfono -->
+    <label for="telefono">Teléfono:</label>
+    <input
+        type="tel"
+        id="telefono"
+        name="telefono"
+        placeholder="10 dígitos"
+        pattern="[0-9]{10}"
+        title="Ingresa un número de teléfono de 10 dígitos"
+        required
+    >
+
+    <!-- Asunto -->
+    <label for="asunto">Asunto:</label>
+    <input
+        type="text"
+        id="asunto"
+        name="asunto"
+        placeholder="Escribe el asunto"
+        required
+        minlength="5"
+        maxlength="100"
+    >
+
+    <!-- Mensaje -->
+    <label for="mensaje">Mensaje:</label>
+    <textarea
+        id="mensaje"
+        name="mensaje"
+        placeholder="Escribe tu mensaje..."
+        required
+        minlength="10"
+        maxlength="500"
+    ></textarea>
+
+    <!-- Aceptar términos -->
+    <label>
+        <input
+            type="checkbox"
+            name="terminos"
+            required
+        >
+        Acepto que mis datos sean utilizados para responder a mi mensaje.
+    </label>
+
+    <button type="submit">Enviar mensaje</button>
+
+</form>
+```
+
+
+
   <!-- footer con id="contacto": acá aterriza el tercer enlace; va una sola vez, al final -->
   <footer id="contacto">
     <h2>Contacto</h2>
     <!-- reemplazá por tu correo real -->
-    <p>[tu-correo@ejemplo.com]</p>
+    <p>[rxcardobands@gmail.com]</p>
     <!-- &copy; genera el símbolo © -->
-    <p>© 2026 [Tu Nombre]</p>
+    <p>©SILVA RENDON 2026 [Tu Nombre]</p>
   <!-- cierre del footer -->
   </footer>
 
